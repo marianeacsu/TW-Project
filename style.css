@@ -1,0 +1,610 @@
+html{
+    font-size: 15px;
+}
+
+@keyframes stanga{
+    from{
+         left:-400px;
+    }
+    to{
+       left:0px;
+       }
+    }
+
+#id1{
+    position: relative;
+    animation-name:stanga;
+    animation-duration:1s;
+ }
+
+@keyframes dreapta{
+    from{
+         left:400px;
+    }
+    to{
+       left:0px;
+       }
+    0%{color: yellow}
+    25%{color:slateblue}
+    50%{color:tomato}
+    100%{color: darksalmon;}
+    }
+
+
+#id2{
+    position: relative;
+    animation-name:dreapta;
+    animation-duration:6s;
+ }
+
+
+.galaxy{
+    font-size: 5.86vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(14, 1, 75);
+}
+
+.bgr{
+    background-color: rgb(14, 1, 75);
+    max-width: 150%;
+    height:150%; 
+    border:rgb(105, 238, 238);
+    margin-top: 0%;
+}
+
+.screen{
+    background-image: url("background.gif");
+    background-size: 1580px;
+    max-width: 150%;
+    height:150%;
+}
+
+.dropbtn {
+  height: 100px;
+  transition-property: width;
+  transition-duration: 2s;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(105, 238, 238);
+  border: none;
+  color: rgb(14, 1, 75);
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 25px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.dropbtn:hover {
+  width: 200px;
+}
+
+.dropbtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.dropbtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.dropbtn:hover span {
+  padding-right: 25px;
+}
+
+.dropbtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color:rgb(14, 1, 75);
+    padding: 20px 60px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+.dropdown-content a:hover {background-color:rgb(105, 238, 238) ;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: yellow;}
+
+
+.chr{
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+    font-size: 2.5vw;
+}
+
+.wave{
+    width: 20.8vw;
+    height: 11.72vw;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  }
+
+.feed{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+}
+
+.pic1 {
+    grid-area: img1;
+}
+
+.pic2 {
+    grid-area: img2;
+}
+
+.pic3 {
+    grid-area: img3;
+}
+
+.pic4 {
+    grid-area: img4;
+}
+
+.pic5 {
+    grid-area: img5;
+}
+
+.pic6 {
+    grid-area: img6;
+}
+
+
+/*
+.col-container{
+    display: flex;
+    align-items: center;
+  justify-content: center;
+
+}
+
+.items{
+flex: 1;
+padding: 16px;
+}
+*/
+
+
+
+.button {
+  background-color: rgb(105, 238, 238);
+  color: rgb(14, 1, 75);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button:hover {
+  background-color: yellow;
+}
+
+@media screen and (max-width: 600px) {
+  .items {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px){
+.feed {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+ }
+ .dropbtn {
+  height: 50px;
+  transition-property: width;
+  transition-duration: 2s;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(105, 238, 238);
+  border: none;
+  color: rgb(14, 1, 75);
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 12.5px;
+  width: 60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.button {
+  background-color: rgb(105, 238, 238);
+  color: rgb(14, 1, 75);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 10px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.chr{
+  text-align:center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: yellow;
+  font-size: 4vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 23px;
+}
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 50vw;
+  margin: auto;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  width: fit-content;
+  font-size:1.5vw;
+}
+.price {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: yellow;
+}
+
+.price::before { 
+  content: "Only:";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.price::after { 
+  content: "Best deal!!!";
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: rgb(14, 1, 75);
+  background-color: rgb(105, 238, 238);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  background-color: rgb(105, 238, 238);
+}
+.card_about {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  max-width: 80vw;
+  margin: auto;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  width: fit-content;
+}
+#bigger{
+    font-size: 2vw;
+}
+
+.card:nth-child(1) {
+  background: red;
+}
+
+.cart-btn {
+  background-color: rgb(105, 238, 238);
+  color: rgb(14, 1, 75);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  right: 0;
+  padding: 12.5px;
+  width:80px;
+  border-radius: 4px;
+}
+.cart-btn:hover{
+background-color: yellow;
+}
+
+.cart {
+  background-color: rgb(105, 238, 238);
+  color: rgb(14, 1, 75);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 28px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  right: 0;
+  padding: 25px;
+  width: 80px;
+  border-radius: 4px;
+}
+.cart:hover{
+background-color: yellow;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 45px;
+}
+
+#details {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: yellow;
+  font-size:1.5vw;
+}
+
+.sunbedpicker {
+  list-style-type:none;
+}
+.sunbedpicker li {
+float: left;
+list-style-type:none;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: yellow;
+font-size:20px;
+}
+
+.sunbedpicker li img {
+width: 100px;
+padding: 10px;
+height: auto;
+cursor: pointer;
+}
+
+
+
+.content-section {
+  margin: 1em;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section-header {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: normal;
+  color: rgb(105, 238, 238);
+  text-align: center;
+  font-size: 2.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart-header {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 50%;
+}
+
+.cart-price {
+  width: 50%;
+  font-size: 1.2em;
+  color: yellow;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: white;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1.5px solid yellow;
+  background-color: white;
+  color: rgb(18, 3, 31);
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid white;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(105, 238, 238);
+  margin-right: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart-total-price {
+  color: yellow;
+  font-size: 1.1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.remove-btn {
+  background-color: rgb(105, 238, 238);
+  color: rgb(14, 1, 75);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  right: 0;
+  padding: 12.5px;
+  width: 100px;
+  border-radius: 4px;
+  height: 50px;
+}
+.remove-btn:hover{
+background-color: yellow;
+}
+
+/*
+.purchase-btn {
+  background-color: rgb(105, 238, 238);
+  color: rgb(14, 1, 75);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  right: 0;
+  padding: 12.5px;
+  width: 100px;
+  border-radius: 4px;
+  height: 50px;
+}
+.purchase-btn:hover{
+background-color: yellow;
+}
+*/
+
+.mystyle {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

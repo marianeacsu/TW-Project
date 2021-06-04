@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book in Pongue beach</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="index.js" async>
+</script>
+</head>
+<body class="bgr">
+    <div>
+        <a class="cart-btn" href="Cart.html">Cart</a>
+    </div>
+    <div class="dropdown" >
+      <button class="dropbtn" style="vertical-align:middle"><span>Menu </span></button>
+            <div class="dropdown-content">
+              <a href="home.html">Home</a>
+              <a href="Europe_beaches.html">Europe</a>
+              <a href="Asia_beaches.html">Asia</a>
+              <a href="Africa_beaches.html">Africa</a>
+              <a href="SouthAmerica_beaches.html">South America</a>
+              <a href="NorthAmerica_beaches.html">North America</a>
+              <a href="Australia_beaches.html">Australia</a>
+              <a href="Book.html">Book your sunbed!</a>
+            </div>
+    </div>
+
+    <div class="row">
+          <div class="column">
+                  <img class="thumbnail" id='africa' src="pongwe.jpg" alt="Pongue beach" style="max-width:100%;height:auto;">
+          </div>
+
+          <div class="column" id="details">
+                  <h1 class="name">Options in Pongue beach:</h1>
+                  <p class="price chr">9$</p>
+                  <ul class="sunbedpicker">
+                          <li><img src="sunbed1.jpg"  alt="Beach" onclick="africaOption('sunbed1.jpg','Sunbed');" data-pin-nopin="true"><br>Sunbed</li>
+                          <li><img src="sunbed1u.jpg" alt="Beach" onclick="africaOption('sunbed1u.jpg','Sunbed+Umbrella');" data-pin-nopin="true"><br>Sunbed+Umbrella</li>
+                          <li><img src="sunbed2.jpg"  alt="Beach" onclick="africaOption('sunbed2.jpg','2Sunbeds');" data-pin-nopin="true"><br>2Sunbeds</li>
+                          <li><img src="sunbed2u.jpg" alt="Beach" onclick="africaOption('sunbed2u.jpg','2Sunbeds+Umbrella');" data-pin-nopin="true"><br>2Sunbeds+Umbrella</li>
+                  </ul>
+                  <p><button class="add button">Add to Cart</button></p>
+                  <p id="p9">Description:</p>
+                  <p>One sunbed is 9$.</p> 
+                  <p>But for today we have a lot of promotions:</p>
+                  <p>1. You can pay only 9$ for a sunbed + umbrella, if you order a cocktail from our bar!</p> 
+                  <p>2. You can pay only 9$ for 2 sunbeds, if you order 2 cocktails from our bar!</p>
+                  <p>3. You can pay only 9$ for 2 sunbeds + umbrella, if you order 2 cocktails from our bar and 2 meals from our beach restaurant!</p>
+                  <p>We are waiting for you!</p>
+                
+          </div>
+  </div>
+  </body>
+</html>
